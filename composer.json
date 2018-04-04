@@ -1,0 +1,31 @@
+{
+  "name": "mediapills/swagger-parser",
+  "description": "A PHP-parser for swagger",
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vlad Zinko",
+      "email": "vladzinko31@gmail.com"
+    }
+  ],
+  "version": "1.0.0",
+  "require": {
+    "symfony/yaml": "^4.1@dev",
+    "symfony/config": "^4.1@dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tests\\": "tests/",
+      "SwaggerParser\\": "",
+      "SwaggerParser\\Validator\\": "/validator/",
+      "SwaggerParser\\Parser\\": "/parser/",
+      "SwaggerParser\\Parser\\Builder\\": "/parser/Builder",
+      "SwaggerParser\\Parser\\Builder\\Components\\": "/parser/Builder/components",
+      "SwaggerParser\\Parser\\Builder\\Builders\\": "/parser/Builder/builders"
+    }
+  }
+}
